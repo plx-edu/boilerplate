@@ -1,0 +1,14 @@
+@mixin flex($direction: column) {
+	display: flex;
+	flex-direction: $direction;
+}
+@mixin flxAlign($x: auto, $y: auto) {
+	// "only on flex and/or grid"
+	align-items: $x; // horizontal
+	justify-content: $y; // vertical
+}
+
+@mixin size($x: auto, $y: auto) {
+	width: $x;
+	height: $y;
+}

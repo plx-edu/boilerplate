@@ -1,0 +1,67 @@
+@import "./base/general";
+@import "./base/fonts/fonts";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./components/square";
+
+* {
+	font-family: "itcKabelFontFace";
+}
+body {
+	background-color: $tertiary;
+}
+main {
+	@include size(100%, 100%);
+	color: $primary;
+}
+.container {
+	@include flex(column);
+	@include flxAlign(center, center);
+
+	margin: 0 auto;
+	padding: 5px;
+
+	max-width: $maxWidth;
+	min-width: $minWidth;
+	width: 100%;
+	min-height: 100%;
+
+	border-left: 1px solid;
+	border-right: 1px solid;
+
+	border-color: $primary;
+	background-color: $secondary;
+}
+
+.smSctn {
+	@include flex(column);
+	@include size(125px, 150px);
+
+	padding: 5px;
+
+	border: 1px solid;
+	border-radius: 5px;
+
+	border-color: $quintenary;
+	background-color: $quaternary;
+}
+.smArtcl {
+	@include flex(column);
+	@include flxAlign(center, center);
+
+	@include size(100%, 100%);
+}
+
+.squareContainer {
+	@include size(100%, 100%);
+
+	padding: 5px;
+
+	text-align: center;
+
+	border: 1px solid;
+	border-radius: 5px;
+
+	border-color: $primary;
+	background-color: $tertiary;
+}

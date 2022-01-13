@@ -1,0 +1,127 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: itcKabelFontFace;
+  src: url(./base/fonts/ITCKABELSTD-BOOK.OTF);
+}
+@font-face {
+  font-family: itcKabelFontFace;
+  src: url(./base/fonts/ITCKABELSTD-DEMI.OTF);
+  font-weight: bold;
+}
+@font-face {
+  font-family: itcKabelFontFace;
+  src: url(./base/fonts/ITCKABELSTD-BOLD.OTF);
+  font-weight: 900;
+}
+.SQR_OUTER {
+  position: relative;
+  width: 100%;
+}
+.SQR_OUTER::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.SQR_OUTER .SQR_INNER {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+* {
+  font-family: "itcKabelFontFace";
+}
+
+body {
+  background-color: #151525;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  color: #fabd45;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 900px;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #fabd45;
+  background-color: #181835;
+}
+
+.smSctn {
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgba(250, 191, 71, 0.5);
+  background-color: #323245;
+}
+
+.smArtcl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.squareContainer {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #fabd45;
+  background-color: #151525;
+}
+
+/*# sourceMappingURL=main.css.map */
